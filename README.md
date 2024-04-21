@@ -3,14 +3,17 @@
 This E-commerce project built on Spring Boot and React.<br>
 
 ## Used Technologies:
-Back-end
+## Back-end
 * Spring (Boot, Data, Security)
 * JPA / Hibernate
 * MySQL
-* Bootstrap, CSS
 * Maven
 * Junit, Mockito
 * Lombok
+
+## Front-end
+* React.js
+* Bootstrap, CSS
 
 ## About This Project
 * Customers can register/login.
