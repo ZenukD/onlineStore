@@ -1,4 +1,4 @@
-# :hibiscus: Perfume web store
+# :hibiscus: Web store
 
 This E-commerce project built on Spring Boot.<br>
 
