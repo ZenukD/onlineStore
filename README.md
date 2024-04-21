@@ -1,12 +1,12 @@
 #  Web store
 
-This E-commerce project built on Spring Boot.<br>
+This E-commerce project built on Spring Boot and React.<br>
 
 ## Used Technologies:
-
+Back-end
 * Spring (Boot, Data, Security)
 * JPA / Hibernate
-* PostgreSQL
+* MySQL
 * Bootstrap, CSS
 * Maven
 * Junit, Mockito
