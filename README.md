@@ -26,3 +26,21 @@ This E-commerce project built on Spring Boot and React.<br>
 * Admin can add or modify product.
 
 ## Screenshots
+### Home Page for admin
+![adminPage](/screenshots/adminPage.png)
+
+### Home Page for customer
+![customerPage](/screenshots/userPage.png)
+
+### Add Product Page
+![addProduct](/screenshots/addProduct.png)
+
+### Login Page
+![loginPage](/screenshots/loginForm.png)
+
+### Register Page
+![registerPage](/screenshots/registerForm.png)
+
+### Basket Page
+![basketPage](/screenshots/basket.png)
+
