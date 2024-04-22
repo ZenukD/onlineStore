@@ -17,7 +17,6 @@ This E-commerce project built on Spring Boot and React.<br>
 
 ## About This Project
 * Customers can register/login.
-* Customers can navigate through the main pages, view products, or select a product from a storefront and preview.
 * Customers can navigate on the main pages browse products or select an item from the showcase and preview.
 * Customers can search for the product according to the specified criteria.
 * Customers can add products to the shopping cart and delete products from the shopping cart and change the quantity.
