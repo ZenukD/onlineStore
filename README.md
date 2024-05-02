@@ -1,6 +1,6 @@
 #  Web store
 
-This E-commerce project built on Spring Boot and React.<br>
+This project built on Spring Boot and React.<br>
 
 ## Used Technologies:
 ## Back-end
