@@ -5,9 +5,11 @@ import com.springboot.everefing.dto.OrderDto;
 import com.springboot.everefing.service.OrderService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -20,6 +22,7 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 
+@ExtendWith(MockitoExtension.class)
 public class OrderControllerTest {
 
     @Mock
@@ -28,10 +31,6 @@ public class OrderControllerTest {
     @InjectMocks
     private OrderController orderController;
 
-    @BeforeEach
-    public void setup() {
-        MockitoAnnotations.initMocks(this);
-    }
 
     @Test
     public void testAddOrder_Success() {
@@ -92,5 +91,36 @@ public class OrderControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals("Orders deleted successfully!", response.getBody());
     }
+    @Test
+    public void testIncreaseQuantity_Success() {
+        // Arrange
+        Long orderId = 1L;
+        OrderDto orderDto = new OrderDto();
+        when(orderService.increaseQuantity(orderId)).thenReturn(orderDto);
+
+        // Act
+        ResponseEntity<OrderDto> response = orderController.increaseQuantity(orderId);
+
+        // Assert
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(orderDto, response.getBody());
+    }
+
+    @Test
+    public void testReduceQuantity_Success() {
+        // Arrange
+        Long orderId = 1L;
+        OrderDto orderDto = new OrderDto();
+        when(orderService.reduceQuantity(orderId)).thenReturn(orderDto);
+
+        // Act
+        ResponseEntity<OrderDto> response = orderController.reduceQuantity(orderId);
+
+        // Assert
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertEquals(orderDto, response.getBody());
+    }
+
+
 
 }
