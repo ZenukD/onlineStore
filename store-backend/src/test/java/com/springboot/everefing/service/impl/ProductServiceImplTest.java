@@ -40,6 +40,7 @@ class ProductServiceImplTest {
         ProductDto productDto = new ProductDto();
         productDto.setId(1L);
         Product product = new Product();
+
         when(modelMapper.map(productDto, Product.class)).thenReturn(product);
         when(productRepository.save(product)).thenReturn(product);
         when(modelMapper.map(product, ProductDto.class)).thenReturn(productDto);
